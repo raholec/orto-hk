@@ -1,7 +1,7 @@
 # Site settings
 title: ORTO-HK
 description: ""
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/orto-hk" # the subpath of your site, e.g. /blog
 url: "https://raholec.github.io" # the name of your domain
 logo_url: svg/min/logo.svg
 

@@ -8,8 +8,8 @@ logo_url: svg/min/logo.svg
 # Hero
 hero: 
     hero_img: hero.jpg
-    hero_title: OrtoHk
-    hero_description:
+    hero_title: ORTO-HK
+    hero_description: Ortodoncie Hradec Králové
 
 # Contact form
 api_token: # Enter API token here

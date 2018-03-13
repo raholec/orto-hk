@@ -38,14 +38,14 @@ map:
 
 # Social settings
 facebook: http://facebook.com
-twitter: http://twitter.com
+#twitter: http://twitter.com
 instagram: http://instagram.com
-youtube: http://youtube.com
-skype: skype:obaez_design?userinfo
-feed: yes
+#youtube: http://youtube.com
+#skype: skype:obaez_design?userinfo
+#feed: yes
 
 # Footer
-copyright: © 2017 ORTO-HK - All rights reserved
+copyright: © 2018 ORTO-HK - All rights reserved
 
 # Build settings
 markdown: kramdown

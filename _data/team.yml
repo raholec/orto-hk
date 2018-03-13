@@ -1,10 +1,30 @@
 - name: MDDr. Kristina Cizkova
-  image: team.jpg
+  image: team_kc.jpg
   email: ordinace@orto-hk.cz
   phone: 495 865 381
 
 - name: MDDr. Šárka Novotná
-  image: team.jpg
+  image: team_sn.jpg
+  email: ordinace@orto-hk.cz
+  phone: 495 865 381
+
+- name: MDDr. Kristina Cizkova
+  image: team_kc.jpg
+  email: ordinace@orto-hk.cz
+  phone: 495 865 381
+
+- name: MDDr. Šárka Novotná
+  image: team_sn.jpg
+  email: ordinace@orto-hk.cz
+  phone: 495 865 381
+
+- name: MDDr. Kristina Cizkova
+  image: team_kc.jpg
+  email: ordinace@orto-hk.cz
+  phone: 495 865 381
+
+- name: MDDr. Šárka Novotná
+  image: team_sn.jpg
   email: ordinace@orto-hk.cz
   phone: 495 865 381
 

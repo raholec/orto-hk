@@ -49,53 +49,58 @@ layout: default
 
 <!-- Start 3 columns -->
 <div class="three-shade-col">
-    <div class="col-sm-4">
-        <svg class="icon icon-envelope-o">
-            <use xlink:href="#icon-envelope-o"></use>
-        </svg>
-        <h3>Contact Us</h3>
-        <ul>
-            {% if site.contact.phone %}
-            <li><strong>Phone:</strong> {{ site.contact.phone }}</li>
-            {% endif %}
-            {% if site.contact.emergency %}
-            <li><strong>Emergency:</strong> {{ site.contact.emergency }}</li>
-            {% endif %}
-            {% if site.contact.email %}
-            <li><strong>Email:</strong> {{ site.contact.email }}</li>
-            {% endif %}
-        </ul>
-    </div>
+
     <div class="col-sm-4">
         <svg class="icon icon-clock-o">
             <use xlink:href="#icon-clock-o"></use>
         </svg>
-        <h3>Opening Hours</h3>
+        <h3>Ortodoncie</h3>
         <table>
             <tbody>
             <tr>
-                <td>Monday – Friday</td>
-                <td>{{ site.monday_friday }}</td>
+                <td>Pondělí</td>
+                <td>7:00 – 15:00</td>
             </tr>
             <tr>
-                <td>Saturday</td>
-                <td>{{ site.saturday }}</td>
-            </tr>
-            <tr>
-                <td>Sunday</td>
-                <td>{{ site.sunday }}</td>
+                <td>Středa</td>
+                <td>7:00 – 15:00</td>
             </tr>
             </tbody>
         </table>
     </div>
     <div class="col-sm-4">
-        <svg class="icon icon-map-marker">
-            <use xlink:href="#icon-map-marker"></use>
+        <svg class="icon icon-clock-o">
+            <use xlink:href="#icon-clock-o"></use>
         </svg>
-        <h3>Location</h3>
-        <p>
+        <h3>Dentální hygiena</h3>
+        <table>
+            <tbody>
+            <tr>
+                <td>Úterý</td>
+                <td>7:00 – 15:00</td>
+            </tr>
+            <tr>
+                <td>Čtvrtek</td>
+                <td>7:00 – 15:00</td>
+            </tr>
+            <tr>
+                <td>Pátek</td>
+                <td>7:00 – 15:00</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-4">
+        <svg class="icon icon-envelope-o">
+            <use xlink:href="#icon-envelope-o"></use>
+        </svg>
+        <h3>Kontakty</h3>
+        <ul>
+            <li><strong>Telefon:</strong> {{ site.contact.phone }}</li>
+            <li><strong>Email:</strong> {{ site.contact.email }}</li>
             {{ site.contact.address }}
-        </p>
+        </ul>
+
     </div>
 </div>
 <!-- End 3 columns -->
@@ -103,55 +108,14 @@ layout: default
 <!-- Start About -->
 <div id="about" class="about">
     <div class="container-fluid">
-        <h2 class="section-title">About Us</h2>
+        <h2 class="section-title">O nás</h2>
 
         <div class="row">
             <div class="col-sm-6">
-                <h3>Welcome to DentistSmile</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus
-                    magnam, delectus!</p>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-heart">
-                                <use xlink:href="#icon-heart"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque
-                            quo, fugit, nisi.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-medkit">
-                                <use xlink:href="#icon-medkit"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque
-                            quo, fugit, nisi.</p>
-                    </div>
-                </div>
-
-                <div class="media">
-                    <div class="media-left">
-                        <div class="boxed-icon">
-                            <svg class="icon icon-star">
-                                <use xlink:href="#icon-star"></use>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="media-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque
-                            quo, fugit, nisi.</p>
-                    </div>
-                </div>
+                <h3></h3>
+                <p>
+                    
+                </p>
             </div>
             <div class="col-sm-6">
                 <div id="ytplayer"></div>
@@ -178,6 +142,7 @@ layout: default
                 </script>
                 <!--<img src="img/about.jpg" alt="...">-->
             </div>
+
         </div>
     </div>
 </div>
@@ -186,20 +151,148 @@ layout: default
 <!-- Start Treatments -->
 <div id="treatments" class="treatments">
     <div class="container-fluid">
-        <h2 class="section-title">Treatments</h2>
-
+        <h2 class="section-title">Ortodoncie</h2>
         <div class="row">
-            {% for treatment in site.data.treatments %}
+            <div class="col-sm-12">
+                <p>
+                    Provádíme rovnání zubů pomocí fixních a snímatelných rovnátek. Pro ortodontickou léčbu
+                    zejména fixními aparáty (rovnátky na pevno) je nezbytná vynikající ústní hygiena, proto od
+                    svých pacientů vyžadujeme návštěvu dentální hygienistky, a to před nasazením rovnátek i
+                    v průběhu léčby. Dentální hygienu nabízíme rovněž externím pacientům. Pokud nejsou zuby
+                    s rovnátky dobře čištěny, mohou vzniknout kolem zámečků bílé skvrny a špatná hygiena
+                    může být také důvodem předčasného sejmutí aparátu. Proto na ústní hygienu klademe
+                    obzvláště důraz.
+                </p>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-sm-6 col-md-4">
                 <div class="icon-box">
-                    <svg class="icon {{ treatment.icon }}">
-                        <use xlink:href="#{{ treatment.icon }}"></use>
+                    <svg class="icon icon-user-md">
+                        <use xlink:href="#icon-user-md"></use>
                     </svg>
-                    <h4>{{ treatment.title }}</h4>
-                    <p>{{ treatment.description }}</p>
+                    <h4>Fixní aparáty:</h4>
+                    <p>
+                        Používáme je ve stálém chrupu a v některých případech i v chrupu smíšeném.
+                        Skládají se ze zámků, které se lepí na zuby a oblouků, které se vážou do zámků pomocí různě barevných gumiček nebo kovových drátků a zuby pohybují.
+                        Chcete-li si vybrat svou barevnou kombinaci, přejděte na stránku:
+                        Zámky mohou být klasické ocelové, pozlacené nebo keramické či safírové, pokud preferujete
+                        estetičtější variantu. Oblouky nabízíme taktéž klasické kovové, pozlacené nebo bílé. Aparátky
+                        bývají v ústech průměrně 2-3 roky, cena není jednorázová a je rozložena do jednotlivých
+                        návštěv. Kontroly bývají po 6 týdnech.
+                        Cena: 20 000 – 30 000 Kč
+                    </p>
                 </div>
             </div>
-            {% endfor %}
+            <div class="col-sm-6 col-md-4">
+                <div class="icon-box">
+                    <svg class="icon icon-user-md">
+                        <use xlink:href="#icon-user-md"></use>
+                    </svg>
+                    <h4>Snímací aparáty:</h4>
+                    <p>
+                        Používáme zejména ve smíšeném chrupu. Jedná se o pryskyřičnou destičku
+                        se šroubkem upevněnou na zuby drátky, která se dá snadno nasadit a zase sundat. Šroubkem
+                        se doma pravidelně otáčí, aby destička ovlivňovala postavení zubů. Nosí se odpoledne a na
+                        noc. Kontroly bývají po 2 měsících.
+                        Cena: 1400-1900 Kč
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="icon-box">
+                    <svg class="icon icon-user-md">
+                        <use xlink:href="#icon-user-md"></use>
+                    </svg>
+                    <h4>Invisalign:</h4>
+                    <p>
+                        Invisalign (neviditelná rovnátka). Jedná se o sekvenci několika folií, které jsou průhledné a
+                        snadno se nasazují a zase sundávají. Nosí se celodenně, nejsou na zubech viditelné. Cena se
+                        pohybuje kolem 80 000 Kč, ale je možné dohodnout i splátkový kalendář.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Start Treatments -->
+<div id="treatments2" class="treatments">
+    <div class="container-fluid">
+        <h2 class="section-title">Dentální hygiena</h2>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
+                    Správná péče o dutinu ústní je základním kamenem v moderní
+                    stomatologii. Nedostatečné odstranění zubního plaku při každodenní hygieně je rizikovým
+                    faktorem pro vznik zánětu dásní a paradentózy. Během návštěvy dentální hygieny Vám
+                    pomůžeme s výběrem vhodné velikosti mezizubních kartáčků a nacvičíme s Vámi správnou
+                    techniku čištění. Součástí ošetření je odstranění zubního kamene a odstranění pigmentací
+                    speciální pastou či pískováním. Samozřejmostí je nanesení přípravku s obsahem fluoridů pro
+                    posílení zubní skloviny vůči zubnímu kazu. Během ortodontické léčby je důsledná péče velice
+                    důležitá. Rovnátka čištění komplikují, proto včasná rada a výběr vhodných pomůcek pomůže
+                    zabránit vzniku zubního kazu a zánětu dásní, který může být důvodem k předčasnému
+                    ukončení ortodontické terapie.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="icon-box">
+                    <svg class="icon icon-user-md">
+                        <use xlink:href="#icon-user-md"></use>
+                    </svg>
+                    <h4>Profesionální čištění zubů:</h4>
+                    <p>
+                        Provádíme profesionální čištění zubů, odstranění zubního kamene, nácvik ústní hygieny
+                        v ústech pacienta, pískování zubů (air flow), scaling (odstranění zubního kamene pod dásní),
+                        fluoridaci (aplikaci gelu s obsahem fluoridů), odstranění pigmentací, bílých a jiných skvrn,
+                        bělení zubů, aplikaci dentálních šperků
+                        Cena: 350-1000 Kč
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="icon-box">
+                    <svg class="icon icon-user-md">
+                        <use xlink:href="#icon-user-md"></use>
+                    </svg>
+                    <h4>Bělení zubů:</h4>
+                    <p>
+                        V naší ordinaci používáme bělení Pure whitening, které kombinuje bělení
+                        domácí a ordinační. Nejprve se 14 dní bělí doma v individuálně zhotovených nosičích a 15.
+                        den dobělíme zuby v ordinaci. Není třeba dodržovat bílou dietu (zříci se kávy, čaje apod.) a
+                        pokud dodržujete bělicí protokol, pak je výsledek bělení stabilní.
+                        Cena: 5500 Kč
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="icon-box">
+                    <svg class="icon icon-user-md">
+                        <use xlink:href="#icon-user-md"></use>
+                    </svg>
+                    <h4>ICON infiltrace:</h4>
+                    <p>
+                        infiltrace: Používá se k odstranění bílých skvrn na zubech. Nejprve se zub naleptá
+                        slabou kyselinou a poté se nanese ICON (tekutá pryskyřice).
+                        Cena: 1000 Kč za zub
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="icon-box">
+                    <svg class="icon icon-user-md">
+                        <use xlink:href="#icon-user-md"></use>
+                    </svg>
+                    <h4>Aplikace dentálních šperků:</h4>
+                    <p>
+                        Jedná se o nalepení kamínku na libovolný zub. Používáme
+                        kamínky Skyce v různých barvách.
+                        Cena: 300 Kč
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -291,3 +384,4 @@ layout: default
 
 
 <!-- End Map -->
+

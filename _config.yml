@@ -5,6 +5,8 @@ baseurl: "/orto-hk" # the subpath of your site, e.g. /blog
 url: "https://raholec.github.io" # the name of your domain
 logo_url: svg/min/logo-orto-hk.svg
 
+
+
 # Hero
 hero: 
     hero_img: hero2.jpg
@@ -17,9 +19,10 @@ api_token: # Enter API token here
 # Contact info
 contact:
     phone: 495 865 381
+    phone2: 775 037 540
     emergency: 775 037 540
     email: ordinace@orto-hk.cz
-    address: Bratří Štefanů 895, <br> Hradec Králové
+    address: 
 
 # Opening hours
 monday_friday: 9:00 – 18:00

@@ -299,7 +299,14 @@ layout: default
 
 </div>
 <!-- End Gallery -->
-<div id="gdpr" class="gdpr">
+
+<!-- Start Map -->
+<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}"
+     data-address-details="<img src='{{ site.map.address_details }}'>"></div>
+
+<!-- End Map -->
+
+<div id="gdpr" class="treatments">
     <div class="container-fluid">
         <h2 class="section-title">Ochrana osobních údajů</h2>
         <div class="row">
@@ -309,15 +316,16 @@ layout: default
                     Kompletní smluvní dokumentaci si můžete projít níže:
                 </p>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p>
 
+                </p>
+            </div>
         </div>
     </div>
 </div>
-<!-- Start Map -->
-<div id="location" class="map" data-zoom="{{ site.map.zoom }}" data-address="{{ site.map.address }}"
-     data-address-details="<img src='{{ site.map.address_details }}'>"></div>
-
-<!-- End Map -->
 
 
 

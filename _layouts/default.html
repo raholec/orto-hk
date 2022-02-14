@@ -6,17 +6,16 @@
     <![endif]-->
 
     {% include header.html %}
- 
+
         {{ content }}
-           
+
     {% include footer.html %}
-    
+
     {% if site.analytics %}
         {% include analytics.html %}
     {% endif %}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyC2V9p3EA5GmTI0fSiXF7lHqt_eq06TC8w"></script>
     <script src="{{ site.baseurl }}/js/all.min.js"></script>
 </body>
 </html>

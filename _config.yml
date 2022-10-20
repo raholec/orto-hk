@@ -11,7 +11,7 @@ logo_url: svg/min/logo-orto-hk.svg
 hero: 
     hero_img: hero2.jpg
     hero_title: Ortodoncie Hradec Králové
-    hero_description: Ortodoncie
+    hero_description:
 
 # Contact form
 api_token: # Enter API token here
